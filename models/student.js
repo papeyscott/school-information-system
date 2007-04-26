@@ -1,4 +1,4 @@
-var mongoose = require('mongoose');
+
 
 //create a schema
 var studentSchema	= mongoose.Schema({

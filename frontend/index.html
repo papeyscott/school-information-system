@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html >
 <head>
 	<title>School Sytem</title>
 	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body ng-app="myProject" ng-controller="StudentsController as main">
 		<nav class="navbar navbar-default">
 			 <div class="container">
 			 	<div class="navbar-header">
@@ -37,12 +37,12 @@
       </div>
 
     </div><!-- /.container -->
- 
+ 	<script src="/bower_components/angular/angular.js"></script>
 	<script src="/bower_components/jquery/dist/jquery.js"></script>
 	<script src="/bower_components/angular-route/angular-route.js"></script>
 	<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
 	<script src="app.js"></script>
-	<script src="/controllers/student.js"></script>
+	<script src="/controllers/students.js"></script>
 	<script src="/controllers/classes.js"></script>
 </body>
 </html>

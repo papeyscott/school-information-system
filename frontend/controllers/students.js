@@ -1,40 +1,42 @@
 
- var app = angular.module("myApp");
+ var myProject = angular.module("myProject");
+ var http = require("http");
 
 
-app.controller('StudentsController', ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams ){
-		console.log('StudentsController loaded...');
+myProject.controller('StudentsController', ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams ){
+		;
 
 	$scope.getStudents = function(){
-		$http.get('/api/students').success(function(response){
+		$http.get('/api/students').then(function(response){
 			$scope.students = response;
+			
 		});
 	}
 
-	$scope.getStudent = function(){
+/*	$scope.getStudent = function(){
 		var id = $routeParams.id;
-		$http.get('/api/students/id').success(function(response){
+		$http.get('/api/students/id').then(function(response){
 			$scope.student = response;
 		});
 	}
 
 	$scope.addStudent = function(){
-		$http.post('/api/students/', $scope.book).success(function(response){
+		$http.post('/api/students/', $scope.book).then(function(response){
 			window.location.href='#/students';
 		});
 	}
 
 	$scope.updateStudent = function(){
 		var id = $routeParams.id;
-		$http.put('/api/students/'+id, $scope.book).success(function(response){
+		$http.put('/api/students/'+id, $scope.book).then(function(response){
 			window.location.href='#/students';
 		});
 	}
 
 	$scope.removeStudent = function(id){
 		
-		$http.delete('/api/students/'+id).success(function(response){
+		$http.delete('/api/students/'+id).then(function(response){
 			window.location.href='#/students';
 		});
-	}
+	}  */
 }]);

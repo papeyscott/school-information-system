@@ -1,6 +1,6 @@
- var app = angular.module("myApp", ["ngRoute"]);
+ var myProject = angular.module("myProject", ["ngRoute"]);
 
-app.config(function($routeProvider){
+myProject.config(function($routeProvider){
 	$routeProvider.when('/', {
 		controller: 'StudentsController',
 		templateUrl:'views/students.html'
