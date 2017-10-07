@@ -1,0 +1,17 @@
+{
+  "name": "school",
+  "version": "1.0.0",
+  "description": "simple school management system app",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.1",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ayodeji",
+  "license": "ISC"
+}
