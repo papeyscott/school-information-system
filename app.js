@@ -3,6 +3,8 @@ var app		= express();
 var bodyParser	= require('body-parser');
 var mongoose	= require('mongoose');
 
+
+app.use(express.static(__dirname+'/frontend'));
 app.use(bodyParser.json());
 
 Class = require('./models/classes');
