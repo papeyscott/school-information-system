@@ -1,9 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
 	<title>School Sytem</title>
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+		<nav class="navbar navbar-default">
+			 <div class="container">
+			 	<div class="navbar-header">
+			 		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			 		<span class="sr-only">Toggle Navigation</span>
+			 		<span class="icon-bar"></span>
+			 		<span class="icon-bar"></span>
+			 		<span class="icon-bar"></span>
+			 	</button>
+			<a href="#" class="navbar-brand">School System</a>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#/students/add">Add Student</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+        
 
+      <div class="starter-template">
+       	<div class="row">
+       		<div class="col-md-12">
+       			<div ng-view>
+       				
+       			</div>
+       		</div>
+       	</div>
+      </div>
+
+    </div><!-- /.container -->
+ 
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/angular-route/angular-route.js"></script>
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="app.js"></script>
+	<script src="/controllers/student.js"></script>
+	<script src="/controllers/classes.js"></script>
 </body>
 </html>
