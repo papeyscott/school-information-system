@@ -1,4 +1,4 @@
-var studentModel = require("./student-model.js");
+var studentModel = require("./students-model.js");
 
 
 exports.interceptIDs = (req, res, next, id) => {
